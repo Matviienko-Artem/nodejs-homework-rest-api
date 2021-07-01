@@ -3,6 +3,7 @@ module.exports = {
     commonjs: true,
     es2021: true,
     node: true,
+    "jest/glabals": true,
   },
   extends: ["standard", "prettier"],
   parserOptions: {
