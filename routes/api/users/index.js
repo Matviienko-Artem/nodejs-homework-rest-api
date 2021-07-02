@@ -10,4 +10,7 @@ router.post("/logout", guard, ctrl.logout);
 router.get("/current", guard, ctrl.current);
 router.patch("/avatars", guard, upload.single("avatar"), ctrl.avatars);
 
+router.get("/verify/:token", ctrl.verify);
+router.post("/verify", ctrl.repeatEmailVerification);
+
 module.exports = router;
